@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-do List</title>
+  
+  <link rel="stylesheet" href="dist/css/styles.css">
+    
+    <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <section>
+        <div class="container">
+          <div class="row row-content">
+            <div class="to-do shadow-lg rounded">
+              <p class="head1">To-Do List</p>
+              <div class="input-group mb-4">
+                <input type="text" class="form-control input-t" placeholder="Enter your tasks here..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-dark" type="button" id="button-addon2">Add Task</button>
+              </div>
+                <div class="list">
+                  <ul class="todo-list">
+                      <!-- ///Sample Task/// -->
+                    <div class="standard">
+                      <p class="listP">
+                        <button class="check" onclick="checkBtn(this.parentNode)">&check;</button>
+                        Make To-Do List
+                        <button class="close1" onclick="closeBtn(this.parentNode)">&#x2715</button>
+                      </p>
+                    </div>
+
+                  </ul>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+ 
+
+    <!-- ///////////////js//////////// -->
+    <script src="dist/js/script.js"></script>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
