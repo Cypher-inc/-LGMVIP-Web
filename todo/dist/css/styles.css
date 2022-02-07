@@ -40,7 +40,6 @@ body {
 }
 
 .list{
-
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -122,13 +121,24 @@ p.listP{
   opacity: 0.4;
 }
 
+/* /////////////footer//////////// */
+/* footer p{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0A0A08;
+} */
 
 /* /////////media/////////// */
 @media (max-width: 1140px){
 .row .to-do{
   width: 95%;
   
-}
+  }
 }
 
 @media (max-width: 768px){
@@ -149,8 +159,6 @@ p.listP{
     padding-left: 5%;
     padding-right:5%;
   }
- 
-
+  
 }
-
 
