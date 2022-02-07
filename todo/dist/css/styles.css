@@ -1,5 +1,4 @@
 
-
 body {
     height: 89vh;
     align-items: center;
@@ -10,8 +9,6 @@ body {
 .container{
   margin: 5%;
   transition: all 0.7s;
-
-
 }
 
 .row .to-do{
@@ -61,7 +58,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .standard{
   padding: 5px 10px 5px 10px;
@@ -118,7 +114,6 @@ p.listP{
 }
 
 
-
 .checked-p{
   text-decoration: line-through;
 }
@@ -126,14 +121,6 @@ p.listP{
   background-color: rgb(51, 51, 51);
   opacity: 0.4;
 }
-
-
-/* /////////////fall animation//////////// */
-/* .fall{
-  transition: 1.5s;
-  transform: translateY(45rem) rotateZ(90deg);
-  opacity: 0;
-} */
 
 
 /* /////////media/////////// */
