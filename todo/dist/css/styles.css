@@ -4,7 +4,6 @@ body {
     height: 89vh;
     align-items: center;
   background-image: linear-gradient(to left, #753682 0%, #bf2e34 100%);
-
   }
 
 
@@ -58,17 +57,18 @@ body {
 }
 
 .standard{
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
 }
 
 
-.list p, .list li{
-
+.standard{
   padding: 5px 10px 5px 10px;
+  margin-bottom: 15px;
+
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.1em;
   /* background-color: hsl(208, 100%, 97%, 0.6); */
   background-color: rgba(0, 0, 0, 0.4);
   color: aliceblue;
@@ -76,48 +76,57 @@ body {
   transition: all 0.3s;
 }
 
-.list p:hover{
+p.listP{
+  margin-bottom: 0px;
+  margin-left: 2px;
+  flex:1;
+  text-align: center;
+}
+
+.standard:hover{
   background-color: rgba(0, 0, 0, 0.6);
   color: aliceblue;
   /* transition: 0s linear; */
 }
 
 .list p .close1{
-  margin-left:25px;
+  /* margin-left:25px; */
   font-size: 1em;
   border: 1px solid black;
 }
 
-
-
-.list p .check{
-  margin-left: 0px;
-  margin-right:25px;
+/* ///btns// */
+.check{
+  margin-right:15px;
   font-size: 1em;
   font-weight: 500;
   border: 1px solid black;
   background-color: rgba(51, 223, 59, 0.5);
 }
 
-.list p .close1{
+.close1{
+  margin-left:15px;
+  border: 1px solid black;
   background-color: rgb(218, 58, 106,0.5);
 }
 
-.list p .check:hover{
+ .check:hover{
   background-color: rgb(95, 228, 100);
 }
-.list p .close1:hover{
+ .close1:hover{
   background-color: rgb(255, 61, 119);
 }
 
 
 
-ul p.checked {
-  background-color: rgb(51, 51, 51);
-  /* background-color: rgba(0, 0, 0, 0.4); */
-  opacity: 0.4;
+.checked-p{
   text-decoration: line-through;
 }
+.checked-d{
+  background-color: rgb(51, 51, 51);
+  opacity: 0.4;
+}
+
 
 /* /////////////fall animation//////////// */
 /* .fall{
@@ -136,10 +145,25 @@ ul p.checked {
 }
 
 @media (max-width: 768px){
+  .head1{
+    font-size: 4rem;
+  }
+  .standard{
+    padding: 5px 10px 5px 10px;
+    font-size: 1rem;
+  }
+
+  .check{
+    /* margin-left:15px; */
+    font-size: 1em;
+  }
+
   .row .to-do{
     padding-left: 5%;
     padding-right:5%;
   }
+ 
+
 }
 
 
