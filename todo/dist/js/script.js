@@ -35,7 +35,13 @@ function checkBtn(div1){
     var y = div1.getElementsByTagName("*"); 
     for (var i = 0; i < y.length; i++) {
       if(y[i].classList.contains('listP')){
-        y[i].classList.add('checked-p') //for line through
+          if(!y[i].classList.contains('checked-p')){
+              y[i].classList.add('checked-p') //for line through
+          }
+          else{
+              div1.classList.remove('checked-d') //for fade
+              y[i].classList.remove('checked-p') //for line through
+          }
       }
     }
 }
