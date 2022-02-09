@@ -47,6 +47,55 @@ div .gender{
   margin-right: 2%;
 }
 
+div .check2{
+  display: flex;
+}
+
 div .check1{
   display: flex;
+}
+
+.btn2{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+/* .clear1{
+  float: right;
+  right: 0 !important;
+  color: #062e3f !important;
+} */
+
+
+
+
+
+/* //////////////////media/////////// */
+@media (max-width: 1140px){
+
+.col-10{
+    padding-left: 5vmin;
+  }
+  .custom-con{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+}
+
+@media (max-width: 576px){
+  .sec-user{
+    margin-bottom: 2%;
+  }
+
+  .btn2{
+    display: block;
+  }
+
+ div .enroll1{
+   margin-bottom: 5%;
+ }
+
 }
