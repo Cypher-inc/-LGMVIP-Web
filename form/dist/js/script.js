@@ -13,20 +13,19 @@ var op2 = document.getElementById('inlineRadio2')
 var chk1 = document.getElementById('inlineCheckbox1')
 var chk2 = document.getElementById('inlineCheckbox2')
 var chk3 = document.getElementById('inlineCheckbox3')
+var form = document.querySelector('form');
 
 
   ////////////img//////////////
 var output
 var loadFile = function(event) {
     output = URL.createObjectURL(event.target.files[0]);
-   
   };
 
 
 var el
 btn1.addEventListener('click',function(){
-  // console.log(op1.value);
-  // console.log(op2.value);
+
       ////////////checkbox///////////
       let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
       let values = []
@@ -36,8 +35,11 @@ btn1.addEventListener('click',function(){
 
       // console.log(values);
       // console.log(URL.createObjectURL(event.target.files[0]));
-
-  card1.innerHTML += `
+    if(!first1.value || !last1.value || !email1.value || !ph_code.value || !ph_no.value){
+      alert('ERROR: Please enter all fields!')
+    }
+    else{
+      card1.innerHTML += `
   <div class="card" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-5">
@@ -55,7 +57,9 @@ btn1.addEventListener('click',function(){
   </div>
   </div>`
 
-  first1.value = ''
-
+  alert('Student Enrolled Successfully!')
+  form.reset()
+    }
+  
 });
 
