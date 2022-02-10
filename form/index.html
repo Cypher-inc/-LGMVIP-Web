@@ -31,11 +31,11 @@
                         
                         <div class="mb-1">
                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder = "example@email.com">
+                          <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder = "example@email.com">
                         </div>
                         <div class="mb-1">
-                          <label for="formFile" class="form-label">Default file input example</label>
-                          <input class="form-control" type="file" id="formFile">
+                          <label for="formFile" class="form-label">Select Profile Image</label>
+                          <input class="form-control" type="file" id="formFile" onchange="loadFile(event)">
                         </div>
 
                         <div class="col-3 col-sm-3 col-xxl-2 mb-1">
@@ -53,11 +53,11 @@
                           </div>
                           <div class="col-10">
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male">
                             <label class="form-check-label" for="inlineRadio1">Male</label>
                           </div>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female">
                             <label class="form-check-label" for="inlineRadio2">Female</label>
                           </div>
                           </div>
@@ -69,22 +69,22 @@
                           </div>
                           <div class="col-8">
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="HTML">
                                 <label class="form-check-label" for="inlineCheckbox1">HTML</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="CSS">
                                 <label class="form-check-label" for="inlineCheckbox2">CSS</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Javascript">
                                 <label class="form-check-label" for="inlineCheckbox3">Javascript</label>
                               </div>
                           </div>
                         </div>
                           
                           <div class="btn2">
-                            <button type="submit" class="btn btn-primary col-12 col-sm-9 enroll1">Enroll Student</button>
+                            <button type="button" class="btn btn-primary col-12 col-sm-9 enroll1">Enroll Student</button>
                             <button type="submit" class="btn btn-danger col-8 col-sm-2 clear1">Clear</button>
                           </div>
                       </form>
@@ -95,10 +95,11 @@
                       <h1 class="pb-3">User Info</h1>
 
                       <div class="card1">
-                        <div class="card mb-3" style="max-width: 540px;">
+                        <!-- ////Sample Data/// -->
+                        <!-- <div class="card" style="max-width: 540px;">
                           <div class="row g-0">
-                            <div class="col-5">
-                              <img src="../form/images/zoe.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-5" >
+                              <img id="display_img" class="img-fluid rounded-start">
                             </div>
                             <div class="col-7">
                               <div class="card-body">
@@ -110,28 +111,14 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row g-0">
-                            <div class="col-5">
-                              <img src="../form/images/ben1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-7">
-                              <div class="card-body">
-                                <h5 class="card-title">Mike Scott</h5>
-                                <p class="card-text">Male</p>
-                                <p class="card-text">mikescott@email.com</p>
-                                <p class="card-text">+91 7876543210</p>
-                                <p class="card-text">HTML, CSS</p>
-                              </div>
-                              </div>
-                            </div>
-                          </div>
+                        </div> -->
+
+
                         </div>
                       </div>
                       
                     </div>
-        </div>
+                </div>
 
       <div class="footer">
       <footer>

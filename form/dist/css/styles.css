@@ -1,5 +1,4 @@
 
-
 *{
   color: aliceblue;
 }
@@ -69,16 +68,18 @@ div .check1{
 .card1{
   margin-top: 5vmin;
   margin-bottom: auto;
-  /* position: relative; */
 }
-
-/* .sec-user{
-  display: flex;
-} */
-
 
 .img-fluid{
   height: 210px !important;
+}
+
+.card{
+  margin-bottom: 5%;
+}
+
+.card:hover{
+  box-shadow: rgba(255, 255, 255, 0.8) 0px 2px 8px 0px;
 }
 
 /* //////////footer//////////// */
