@@ -38,7 +38,7 @@ div.sec-form, div.sec-user{
   padding-right: 5%;
 }
 
-div.sec-form h1, div.sec-userh1{
+div.sec-form h1, div.sec-user h1{
   padding-top: 3%;
   text-align: center;
 }
@@ -61,16 +61,33 @@ div .check1{
   justify-content: space-between;
 }
 
+.card-body p, .card-body h5{
+  color: #000 !important;
+  /* background-color: #000; */
+}
 
-/* .clear1{
-  float: right;
-  right: 0 !important;
-  color: #062e3f !important;
+.card1{
+  margin-top: 5vmin;
+  margin-bottom: auto;
+  /* position: relative; */
+}
+
+/* .sec-user{
+  display: flex;
 } */
 
 
+.img-fluid{
+  height: 210px !important;
+}
 
-
+/* //////////footer//////////// */
+footer p{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: aliceblue;
+}
 
 /* //////////////////media/////////// */
 @media (max-width: 1140px){
@@ -83,6 +100,14 @@ div .check1{
     margin-right: 5%;
   }
 
+}
+@media (max-width: 768px){
+  .sec-form .btn2{
+    margin-bottom: 4vmin;
+  }
+  .sec-user{
+    border-top:2px solid #062e3f;
+  }
 }
 
 @media (max-width: 576px){
